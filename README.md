@@ -14,7 +14,7 @@ Como parte do experimento, faça a validação dos resultados calculando o valor
 
 ### Entrega:
 
-Crie um PDF com os prints da execução do seu código.
+Submeta seu código aqui no GitHub e também um PDF com os prints da execução do seu código.
 
 ## Experimentação de conta corrente
 
@@ -36,4 +36,12 @@ Construa uma nova solução da versão anterior resolvendo o problema da condiç
 
 ### Entregas
 
-Crie um PDF com as evidências de execuções (eg. print de tela da execução).
+Submeta seu código aqui no GitHub e também crie um PDF com as evidências de execuções (eg. print de tela da execução).
+
+## Números primos
+
+Faça um programa usando PThreads que encontre todos os números primos até N; defina uma função no seu programa que receba 2 parâmetros J e K (individualmente ou por vetor), indicando o número de início e de fim dessa pequisa. O número de threads deve ser definido por argumento de linha de comando na chamada do programa ou por variável de ambiente (NTHREADS).
+
+### Entregas
+
+Submeta seu código aqui no GitHub (vc vai criar um novo arquivo fonte) e também os prints (PDF) das evidências de execuções.
