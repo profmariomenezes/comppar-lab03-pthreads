@@ -1,18 +1,55 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <pthread.h>   
+#include <stdio.h>
+#include <stdlib.h>         
 
+void * deposito(int *id);
+void * saque(int *id);
 
-int main() {
+int i = 0, j = 0;
 
-  
+double saldo = 1000;
 
-  saldo = 1000.00;
+int main()
+{
+  pthread_t t1, t2;
 
-  depositos(); /* realiza uma "infinidade" de depositos, e.g. 2147483000 depositos de 5.0 unidades monetárias */
+  pthread_create(&t1, NULL, (void *)deposito, NULL);
+  pthread_join(t1, NULL);
+  pthread_create(&t2, NULL, (void *)saque, NULL);
+  pthread_join(t2, NULL);
 
-  saques(); /* realiza uma "infinidade" de saques, e.g. 2147483000 saques de 2.0 unidades monetárias */
+  printf("Saldo: %.2f",saldo);
+}
 
-  printf("Saldo final: %.2lf\n", saldo);
+void * deposito(int *id)
+{
+  double dep;
 
-  return 0;  
+  while(j < 10)
+    {
+      dep = (double)(5);
+
+      saldo += dep;
+      printf("Depositado: %.2f\n", dep);
+      
+      j ++;
+    }
+};
+
+void * saque(int *id)
+{
+  double debt;
+
+  while (i < 10)
+    {
+      debt = (double)(2);  
+      if (saldo - debt < 50)
+	printf("Saldo insuficiente\n");
+      else
+	{
+	  saldo -= debt;
+	  printf("Saque: %.2f\n", debt);
+	}
+      i ++;
+    }
 }
