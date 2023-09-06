@@ -40,7 +40,7 @@ Submeta seu código aqui no GitHub e também crie um PDF com as evidências de e
 
 ## Números primos
 
-Faça um programa usando PThreads que encontre todos os números primos até N; defina uma função no seu programa que receba 2 parâmetros J e K (individualmente ou por vetor), indicando o número de início e de fim dessa pequisa. O número de threads deve ser definido por argumento de linha de comando na chamada do programa ou por variável de ambiente (NTHREADS).
+Faça um programa usando PThreads que encontre todos os números primos dentro de uma faixa de valores; defina uma função no seu programa que receba 2 parâmetros J e K (individualmente ou por vetor), indicando o número de início e de fim dessa pequisa. O número de threads deve ser definido por argumento de linha de comando na chamada do programa ou por variável de ambiente (NTHREADS).
 
 ### Entregas
 
