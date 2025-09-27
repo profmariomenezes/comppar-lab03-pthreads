@@ -1,4 +1,7 @@
-# comppar-lab03-pthreads
+# ATENÇÃO: PARA LAB 05N11 20252
+
+**Implementar apenas a atividade de números primos descrita abaixo**
+
 
 ## A função de Fibonacci pode ser facilmente calculada da seguinte forma:
 
